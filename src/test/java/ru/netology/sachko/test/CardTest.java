@@ -25,6 +25,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
 import org.openqa.selenium.Keys;
 import ru.netology.sachko.data.DataGenerator;
 
@@ -32,7 +33,7 @@ import java.util.Locale;
 
 public class CardTest {
     @BeforeEach
-    void setup  (){
+    void setup() {
         open("http://localhost:9999");
     }
 

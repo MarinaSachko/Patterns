@@ -22,20 +22,20 @@ public class DataGenerator {
     }
 
     public static String generateCity(String locale) {
-       var cities = new String[] {"Симферополь", "Севастополь", "Краснодар", "Ростов-на-Дону", "Москва",
-               "Санкт-Петербург", "Рязань", "Тюмень", "Магас", "Биробиджан"};
+        var cities = new String[]{"Симферополь", "Севастополь", "Краснодар", "Ростов-на-Дону", "Москва",
+                "Санкт-Петербург", "Рязань", "Тюмень", "Магас", "Биробиджан"};
         return cities[new Random().nextInt(cities.length)];
     }
 
     @org.jetbrains.annotations.NotNull
     public static String generateName(String locale) {
         var faker = new Faker(new Locale(locale));
-    return faker.name().lastName()+" "+faker.name().firstName();
+        return faker.name().lastName() + " " + faker.name().firstName();
     }
 
     public static String generatePhone(String locale) {
         var faker = new Faker(new Locale(locale));
-           return faker.phoneNumber().phoneNumber();
+        return faker.phoneNumber().phoneNumber();
     }
 
     public static class Registration {
