@@ -70,8 +70,8 @@ public class CardTest {
         $(byText("Запланировать")).click();
 
 
-//        $(byText("Успешно!"))
-//                .shouldBe(Condition.visible, Duration.ofSeconds(20));
+        $(byText("Успешно!"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(20));
 
         $("[data-test-id='replan-notification'] .notification__content")
                 .shouldHave(text("У вас уже запланирована встреча на другую дату. Перепланировать?"))
